@@ -1,44 +1,25 @@
-{
-    WebSite: {
-        PortalSite: [
-            {
-
-                name: "Google",
-
-                url: "http://www.google.com.tw/"
-
-            },
-
-           {
-
-                name: "Yahoo",
-
-                url: "http://tw.yahoo.com/"
-
-            }
-
-        ],
-
-        SocialNetworkingSite: [
-
-            {
-
-                name: "FaceBook",
-
-                url: "https://www.facebook.com/"
-
-            },
-
-            {
-
-                name: "Twitter",
-
-                url: "https://twitter.com/twitter_cht"
-
-            }
-
-        ]
-
-    }
-
-}
+[{
+    "Manufacturer": "Toyota",
+    "Sold": 1200,
+    "Month": "2012-11"
+}, {
+    "Manufacturer": "Ford",
+    "Sold": 1100,
+    "Month": "2012-11"
+}, {
+    "Manufacturer": "BMW",
+    "Sold": 900,
+    "Month": "2012-11"
+}, {
+    "Manufacturer": "Benz",
+    "Sold": 600,
+    "Month": "2012-11"
+}, {
+    "Manufacturer": "GMC",
+    "Sold": 500,
+    "Month": "2012-11"
+}, {
+    "Manufacturer": "HUMMER",
+    "Sold": 120,
+    "Month": "2012-11"
+}]
