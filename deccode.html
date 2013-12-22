@@ -1,0 +1,51 @@
+<head>
+	<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+
+</head>
+<body>
+	<div id ="html"></div>
+</body>
+
+
+<script>
+
+document.write('<p>Hello world!</p>'); 
+
+ $.getJSON('j1.json','',process(info));
+
+ function process(data)
+ {
+ 	var infohtml = '';
+ 	$.each(data,function(obj,info))
+ 	{
+ 		if(obj == 'WebSite')
+ 		{
+ 			$.each(info,function(name,content))
+ 			{
+
+ 				if( name = 'PortalSite')
+ 				{
+ 					infohtml += get(content)+'<br/>';
+ 				}
+ 				else
+ 				{
+ 					infohtml += get(content);
+ 				}
+ 				infohtml = '<p>'+infohtml+'<p>';
+ 			}
+ 		}
+ 	});
+	$('#html'.html(infohtml));
+ }
+ function get(info)
+ {
+ 	var html = '';
+ 	for (var i = 0; i < info.length-1; i++) {
+ 		html += '<a href ="' + info[i].url+'">'+info[i].name+'</a><br />';
+ 	};
+ 	return html;
+ }
+
+
+ </script>
+	

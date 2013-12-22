@@ -1,0 +1,44 @@
+{
+    WebSite: {
+        PortalSite: [
+            {
+
+                name: "Google",
+
+                url: "http://www.google.com.tw/"
+
+            },
+
+           {
+
+                name: "Yahoo",
+
+                url: "http://tw.yahoo.com/"
+
+            }
+
+        ],
+
+        SocialNetworkingSite: [
+
+            {
+
+                name: "FaceBook",
+
+                url: "https://www.facebook.com/"
+
+            },
+
+            {
+
+                name: "Twitter",
+
+                url: "https://twitter.com/twitter_cht"
+
+            }
+
+        ]
+
+    }
+
+}
