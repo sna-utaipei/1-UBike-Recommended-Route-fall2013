@@ -1,0 +1,6 @@
+Media Source Error Report :
+
+Error type : Video cut
+Material type : Template
+Error information : Unknown
+Detailed information : ..\CES_Source\Src\CES_Engine\CES_MediaSlot.CPP:16891

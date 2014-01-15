@@ -1,0 +1,100 @@
+<head>
+	<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+<script>
+
+
+
+/* $.getJSON('j1.json','',process(data));
+document.write('<p>Hello world!</p>'); 
+ function process(data)
+ {
+ 	var infohtml = '';
+ 	$.each(data,function(obj,info))
+ 	{
+ 		if(obj == 'WebSite')
+ 		{
+ 			$.each(info,function(name,content))
+ 			{
+
+ 				if( name = 'PortalSite')
+ 				{
+ 					infohtml += get(content)+'<br/>';
+ 				}
+ 				else
+ 				{
+ 					infohtml += get(content);
+ 				}
+ 				infohtml = '<p>'+infohtml+'<p>';
+ 			}
+ 		}
+ 	});
+	$('#html'.html(infohtml));
+ }
+ function get(info)
+ {
+ 	var html = '';
+ 	for (var i = 0; i < info.length-1; i++) {
+ 		html += '<a href ="' + info[i].url+'">'+info[i].name+'</a><br />';
+ 	};
+ 	document.write(html); 
+ 	return html;
+
+ }*/
+var json = '{
+    WebSite: {
+        PortalSite: [
+            {
+
+                name: "Google",
+
+                url: "http://www.google.com.tw/"
+
+            },
+
+           {
+
+                name: "Yahoo",
+
+                url: "http://tw.yahoo.com/"
+
+            }
+
+        ],
+
+        SocialNetworkingSite: [
+
+            {
+
+                name: "FaceBook",
+
+                url: "https://www.facebook.com/"
+
+            },
+
+            {
+
+                name: "Twitter",
+
+                url: "https://twitter.com/twitter_cht"
+
+            }
+
+        ]
+
+    }
+
+}';
+
+    obj = JSON.parse(json);
+
+document.write(obj.WebSite);
+
+ </script>
+</head>
+<body>
+	<div id ="html"></div>
+</body>
+
+
+
+	

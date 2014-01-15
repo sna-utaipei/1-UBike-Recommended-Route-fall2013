@@ -1,0 +1,37 @@
+﻿<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<!-- CSS -->
+<style type="text/css">
+
+</style>
+
+<!-- Javascript -->
+<script type="text/javascript">
+
+
+        $.getJSON("j1.json", function(data){ 
+            var html = [];
+
+            /* loop through array */
+            $.each(data, function(index, d){ 
+				$.each(d, function(k, v) {			
+					html.push("緯度 : ", v.lat,"　經度 : ", v.lng,"<br>");
+				});
+			});
+
+
+            $("#div381").html(html.join('')).css("background-color", "orange");
+        }).error(function(jqXHR, textStatus, errorThrown){ /* assign handler */
+            /* alert(jqXHR.responseText) */
+            alert("error occurred!");
+        });
+</script>
+
+<!-- HTML -->
+<a name="#ajax-getjson-example"></a>
+<div id="example-section38">    
+    <div>汽車銷售報表</div>
+    <div id="div381"></div>
+    <button id="btn382" type="button">點我載入汽車銷售報表 (json type)</button>    
+    &nbsp;<a href="j1.json" target="_blank">原始銷售報表</a>
+</div>
